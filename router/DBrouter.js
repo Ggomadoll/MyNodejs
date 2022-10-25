@@ -79,14 +79,14 @@ DBrouter.post('/JoinDB', (req,res) => {
     });
 
 
-    // 회원삭제 라우터 만들기
-    // 1.get방식의 /Delete 라우터 생성
-    // 2. 사용자가 입력한 id값 가져오기
-    // 3. id값을 통해 member 테이블에 있는 id값 삭제하기
-    // 4. 삭제 성공 후 Main.html로 돌아가기
-
+    
 });
 
+// 회원삭제 라우터 만들기
+// 1.get방식의 /Delete 라우터 생성
+// 2. 사용자가 입력한 id값 가져오기
+// 3. id값을 통해 member 테이블에 있는 id값 삭제하기
+// 4. 삭제 성공 후 Main.html로 돌아가기
 DBrouter.get("/Delete", (req, res) => {
 
     let id = req.query.id;

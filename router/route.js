@@ -1,4 +1,5 @@
 
+const { request } = require("express");
 const express = require("express");
 
 const router = express.Router();    // express 갖고있는 기능중에 router기능을 사용
@@ -132,11 +133,6 @@ router.post('/join', (req,res) => {
 
 })
 
-
-router.get("/Message", (req,res) => {
-
-    res.render("message", {});
-})
 
 
 
