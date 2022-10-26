@@ -21,8 +21,17 @@
                         <td>Addr</td>
                                 <td>삭제여부</td>
                      </tr>
-                     <%
-                     %>
+                     <!-- row_name안에 있는 데이터를 출력하시오. -->
+                     <%for(let i=0;i<row_name.length;i++){%>
+                        <tr>
+                           <td><%=row_name[i].email%></td>
+                           <td><%=row_name[i].tel%></td>
+                           <td><%=row_name[i].address%></td>
+                           <td><a href="http://127.0.0.1:3001/SelectDelete?email=<%= row_name[i].email %>">삭제</td>
+                              <!-- MessageDelete라우터를 생성하고 클릭한 해당 이메일의 정보를 삭제하시오. (SeleteAll.ejs 참고) 삭제에 성공하면
+                              selectMember.ejs이동 -->
+                        </tr>
+                        <%}%>
                   </table>
                </nav>
          </div>

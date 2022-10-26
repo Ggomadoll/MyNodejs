@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:3001/ex01" >
+		
+			<legend>선호도 조사 시스템</legend>
+			<table align="center"
+            border="1">
+				
+				<tr>
+					<td><label for="name">NAME</label></td>
+					<td><input type="text" id="name"   name="name"></td>
+				</tr>
+			
+				<tr>
+					<td><label for="gender">좋아하는 계절</label></td>
+					<td>봄<input type="radio" id="season" value="spring" name="season">여름<input type="radio"
+							id="season" value="summer" name="season">가을<input type="radio" id="season" value="fall" name="season">
+                        겨울<input type="radio" id="season" value="winter" name="season"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" value="확인하기!"></td>
+				</tr>
+			</table>
+		
+	</form>
+   
+</body>
+</html>
