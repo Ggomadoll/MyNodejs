@@ -10,8 +10,8 @@ router.get('/ex01', (req, res) => {
     const season = req.query.seasons;
 
     res.render('ex01', {
-        name: name,
-        season: season
+        name: req.query.name,
+        season: req.query.season
     })
 })
 
